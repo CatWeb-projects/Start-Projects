@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
 
-export const App: React.FC = () => {
+export const App = () => {
   return <div className="App"></div>;
 };

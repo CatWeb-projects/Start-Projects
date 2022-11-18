@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lerna:lint:js": "lerna run lint:js:fix",
-    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,scss}\""
+    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,scss}\"",
+    "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -42,14 +43,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
