@@ -1,0 +1,74 @@
+//@import url('https://db.onlinewebfonts.com/c/7f68a670100a48f475fc330a0eb0cc92?family=Axure+Handwriting');
+@import url(//db.onlinewebfonts.com/c/478e653b5b1afb91b0d06091ed542563?family=Futura+New+Book);
+
+:root {
+  --opt-blue: #262262;
+  --opt-red: #EA5300;
+  --opt-dark-red: #B24008;
+  --opt-orange: #FFBA09;
+  --opt-dark-orange: #F48C07;
+  --opt-white: #FFFFFF;
+  --opt-grey: #C4C9D9;
+  --opt-dark-grey: #767B87;
+  --opt-light-grey: #F5F6FB;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Futura New Book', sans-serif;
+  font-style: normal;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+}

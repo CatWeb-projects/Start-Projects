@@ -1,30 +1,46 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es2021": true
   },
-  "extends": ["plugin:react/recommended", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "parserOptions": {
+    "project": ["./tsconfig.json"],
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
       "jsx": true
     },
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "no-loops", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "no-loops", "prettier"],
   "rules": {
-    "react/jsx-filename-extension": [
-      1,
-      { "extensions": [".js", ".jsx", ".tsx"] }
-    ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "no-loops/no-loops": 2, // 2 means throw an ERROR
     "no-console": 1,
     "prettier/prettier": 2,
     "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "linebreak-style": "off",
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-no-useless-fragment": 0,
+    "react/require-default-props": 0,
+    "react/jsx-no-bind": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/naming-convention": 0,
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/function-component-definition": "off",
+    "arrow-body-style": ["error", "always"],
+    "react/button-has-type": "off"
   }
 }
