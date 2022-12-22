@@ -25,7 +25,7 @@
     "no-loops/no-loops": 2, // 2 means throw an ERROR
     "no-console": 1,
     "prettier/prettier": 2,
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "linebreak-style": "off",
@@ -41,6 +41,7 @@
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/function-component-definition": "off",
     "arrow-body-style": ["error", "always"],
-    "react/button-has-type": "off"
+    "react/button-has-type": "off",
+    "eslint/default-param-last": "off"
   }
 }
